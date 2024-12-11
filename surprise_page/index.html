@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sürpriz</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1, h2 {
+            margin: 0;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        h1 {
+            font-size: 3rem;
+            animation-delay: 2s;
+        }
+
+        h2 {
+            font-size: 2rem;
+            animation-delay: 3s;
+        }
+
+        /* Çiçek Görselleri */
+        .flowers {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+        .flowers img {
+            width: 100px;
+            margin: 10px;
+            animation: flowerAnimation 5s infinite ease-in-out;
+        }
+
+        @keyframes flowerAnimation {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Çiçekler -->
+    <div class="flowers">
+        <!-- Yerel görsel -->
+        <img src="3ea0039c-bc33-480e-b52d-7ed1c714a634.jpg" alt="Flower">
+        <img src="3ea0039c-bc33-480e-b52d-7ed1c714a634.jpg" alt="Flower">
+        <img src="3ea0039c-bc33-480e-b52d-7ed1c714a634.jpg" alt="Flower">
+    </div>
+
+    <h1>I Love You ❤️</h1>
+    <h2>İGA</h2>
+</body>
+</html>
